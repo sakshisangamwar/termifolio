@@ -1,0 +1,46 @@
+body {
+    background-color: #2b2b2b;
+    color: #00ff00;
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal {
+    flex: 1;
+    background-color: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#terminal-output {
+    flex: 1;
+    white-space: pre-wrap;
+    overflow-y: auto;
+}
+
+.terminal-input {
+    display: flex;
+}
+
+.terminal-input span {
+    color: #00ff00;
+}
+
+#terminal-input-field {
+    background: none;
+    border: none;
+    outline: none;
+    color: #00ff00;
+    flex: 1;
+    font-size: 1rem;
+}
+
+#terminal-input-field::placeholder {
+    color: #00ff00;
+    opacity: 0.5;
+}
